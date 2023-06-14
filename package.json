@@ -1,0 +1,14 @@
+{
+  "name": "redux-demo",
+  "version": "1.0.0",
+  "description": "a demo featurs Redux , Redux toolkit, React-Redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manar Essam",
+  "license": "ISC",
+  "dependencies": {
+    "redux": "^4.2.1"
+  }
+}
