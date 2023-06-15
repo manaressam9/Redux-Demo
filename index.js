@@ -112,6 +112,7 @@ const unsubscribe = store.subscribe(() => {
  actions.orderCake();
  actions.stockCake();
  actions.orderIceCream();
+ actions.stockIceCream();
 //unsubscirbe
 
 unsubscribe();
