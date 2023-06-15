@@ -31,6 +31,7 @@ function dataReducer(state = initialState, action){
                 draft.address.street = action.payload
                 draft.children[0].age = action.childage
             })
+        default: return state
     }
 }
 

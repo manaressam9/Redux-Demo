@@ -1,8 +1,16 @@
 //import redux lib and createStore API
 const redux = require('redux');
+const reduxLogger = require('redux-logger')
 const createStore = redux.createStore
 const bindActionCreators = redux.bindActionCreators
 const combineReducers = redux.combineReducers
+const applyMiddleware = redux.applyMiddleware
+const logger = reduxLogger.createLogger()
+/* MiddleWare */
+
+
+
+
 //to run this file node index.js
 console.log('from entry point index.js');
 //define action types
@@ -87,13 +95,13 @@ const initialState = {
   })
 //create Store >> takes reducer func which holds the app state
 
-const store = createStore(rootReducer)
+const store = createStore(rootReducer, applyMiddleware(logger))
 //access the state useing getState()
 
 console.log('Initial State ', store.getState())
 //subscribe to store > runs whenever the store is updated
 const unsubscribe = store.subscribe(() => {
-    console.log('Updated State ', store.getState())
+    
   })
   
 //dispatch the action
