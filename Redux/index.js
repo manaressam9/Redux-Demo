@@ -84,6 +84,12 @@ const initialState = {
           ...state,
           numOfIceCream : state.numOfIceCream + action.payload
         }
+        //reducers can respond to actions of other components but only have access to the state assigned to them
+        case CAKE_ORDERED:
+          return{
+            ...state,
+            numOfIceCream: state.numOfIceCream - 1,
+          }
         default:
           return state
     }

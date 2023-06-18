@@ -4,7 +4,7 @@ const initialState = {
     numOfCakes : 10,
 }
 
-// cakeSlice generate cakeReducer and cakeActions
+// createSlic generate cakeReducer and cakeActions > cake/ordered , cake/restored
 const cakeSlice = createSlice({
  name: 'cake',
  initialState, // initialState: initialState
@@ -16,6 +16,7 @@ const cakeSlice = createSlice({
    state.numOfCakes += action.payload
    },
  },
+ 
 })
 
 module.exports = cakeSlice.reducer
