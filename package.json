@@ -9,6 +9,7 @@
   "author": "Manar Essam",
   "license": "ISC",
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
     "axios": "^1.4.0",
     "immer": "^10.0.2",
     "redux": "^4.2.1",
