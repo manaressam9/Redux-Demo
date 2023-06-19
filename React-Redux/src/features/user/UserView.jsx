@@ -16,7 +16,7 @@ export const UserView = () => {
     <div>
         <h2>list of users</h2>
          {users.loading && <h6>Loading...</h6>}
-         {!users.loading && users.error ? <h6>Error: {user.error}</h6>: null}
+         {!users.loading && users.error ? <h6>Error: {users.error}</h6>: null}
          {!users.loading && users.users.length ? (
             <ul>
                 {users.users.map(user => (
